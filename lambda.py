@@ -77,7 +77,7 @@ def lambda_handler(event, context):
     updater = Updater(token)
     dp = updater.dispatcher
     bot = updater.bot
-    dp.add_handler(CommandHandler('help', eq_message))
+    dp.add_handler(CommandHandler('last', eq_message))
     dp.add_handler(CommandHandler('add', subscribe))
     dp.add_handler(CommandHandler('delete', unsubscribe))
 
